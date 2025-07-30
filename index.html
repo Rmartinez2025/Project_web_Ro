@@ -13,56 +13,102 @@
 <body>
 
 <!--Encabezado con CSS-->
-<header>        
+<header id="inicio">
+
+    <img src="imagenes/header_fondo.jpg" alt="imagenHeader">
+    <nav>
+        <ul>
+            <li><a href="#Info"> Informacion Contacto</a></li>
+            <li><a href="#Profesion"> Perfil Profesional</a></li>
+            <li><a href="#Experiencia"> Experiencia Laboral</a></li>
+            <li><a href="#Formacion">Formación Academica</a></li>
+            <li><a href="#Referen"> Referencia Personales</a></li>
+        </ul>
+    </nav>
+
 </header>
 
+
+
+
+
 <!--Indice / Barra Vertical Gris--> 
-<div class="contenedor">
-    <aside class="sidebar">
-        <img src="imagenes/Foto.png" width="200">
-            <hr>
-                <ul>
-                    <li><a href="#Info"> Informacion de Contacto</a></li><br>
-                    <li><a href="#Profesion"> Perfil Profesional</a></li> <br>
-                    <li><a href="#Experiencia"> Experiencia Laboral</a></li> <br>
-                    <li><a href="#Formacion">Formación Academica</a></li> <br>
-                    <li><a href="#Referen"> Referencia Personales</a></li> <br>
-                </ul>
+<section class="contenedor">
+    <aside class="barraLateral">
+        <img id="fotoPerfil" src="imagenes/Foto2.png" alt="Foto de Perfil" width="200">
+        
 
-<hr>
-    <br>
+        <!--Creacion Formulario_Text Area + Foto + Input   -->
+        <form action="" method="post">
+            <fieldset>
+                <legend><strong>Comunicación Directa</strong></legend>
+                <textarea id="mensaje" name="mensaje" rows="8" cols="40"
+                    placeholder="Unas Palabras para Mi..."></textarea>
 
-<!--Creacion Formulario_Text Area + Foto + Input   -->
-<form action="" method="post">
-<label for="DejameTumensaje"> <strong>Comunicación Directa</strong></label>
-    <br>
-        <br>
-            <textarea id="mensaje" name="mensaje" rows="8" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
-                <input type="submit" value="Enviar">   
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
 
-</form>
+        <!--Informacion de Contacto-->
+        <aside class="contac">
+        <h1>CONTACTO</h1>
+        
+        <!--Adapctacion Iconco con Texto-->
+        <div class="icono-contacto">
+        <img src="imagenes/llamar.png" width="20 ">
+        <p>315 5025058</p>
+        </div>
+
+        <div class="icono-email">
+        <img src="imagenes/email.png" width="20 "><a href="mailto:rodrigo_702@hotmail.com">rodrigo_702@hotmail.com</a>
+        </div>
+        
+        <div class="icono-web">
+        <img src="imagenes/web.png" width="20 "><a href="https://www.linkedin.com/in/rorotech/"> www.linkedin.com/in/rorotech</a>
+        </div>
+
+        <div class="icono-ubicacion">
+        <img src="imagenes/ubicacion.png" width="20 ">
+        <p>Cali / Valle del Cauca</p>
+        </div>
+
+        </aside>
     </aside>
-        <br>
+
+    
 
 <!--Definimos el Contenido Principal-->
 <main class="contenido">
      
-<!--Informacion de Contacto-->
-<section id="Info">
-    <h2 class="section1">Informacion de Contacto</h2>      
+<!--Sobre Mi-->
+<section id="Info" class="SobreMi">
+    <h2 class="section1">Un Poco Sobre Mi</h2>      
         <hr>
-            <p><strong>Telefono:</strong> 3155025058</p>
-            <p><strong>Email:</strong> <a href="mailto:rodrigo_702@hotmail.com">rodrigo_702@hotmail.com</a> </p>
-            <p> <strong>linkedin:</strong><a href="https://www.linkedin.com/in/rorotech/"> www.linkedin.com/in/rorotech</a></p>
-            <p><strong>Ciudad:</strong> Cali</p>
+            <p>Tengo 34 años y una mente que nunca se apaga. Me encanta crear: ideas, contenido, soluciones… incluso preguntas. Soy de
+            los que se detienen a mirar cómo funciona una puerta automática o por qué el cielo cambia de color al atardecer. La
+            curiosidad es mi motor. Soy autodidacta por naturaleza. Cuando algo me interesa, no espero a que alguien me lo enseñe: investigo, practico y, si
+            es necesario, fallo hasta entenderlo. La creación de contenido es una de mis pasiones, porque me permite mezclar
+            creatividad, comunicación y tecnología en un solo canal de expresión.
+            <br>
+            <br>
+            Aprender cosas nuevas no es solo un gusto, es parte de mi rutina diaria. Me emocionan los desafíos, me intrigan los
+            misterios cotidianos y siempre busco una forma diferente (y mejor) de hacer las cosas.
+            <br>
+            <br>
+            Si tuviera que resumirme en una sola frase, sería esta:
+            <strong>"No me gusta quedarme con la duda, prefiero descubrir el cómo y el porqué, y luego compartirlo con el mundo."</strong>
+            </p>
 </section>
     <br>
 
 <!--Perfil profesional-->
-<section id="Profesion">
+<section id="Profesion" class="Profesional">
     <h2 class="section1">Perfil Profesional</h2>
         <hr>
-            <p>Soy estudiante del programa Tecnólogo en Desarrollo de Sistemas Electrónicos Industriales del SENA, próximo a iniciar mi etapa productiva. Me apasiona la automatización y el desarrollo de soluciones tecnológicas orientadas a la mejora de procesos. Me identiﬁco con empresas que innovan y se proyectan hacia el futuro, donde me gustaría aportar mis conocimientos y al mismo tiempo
+            <p>Soy estudiante del programa Tecnólogo en Desarrollo de Sistemas Electrónicos Industriales del SENA, próximo a iniciar
+            mi etapa productiva. Me apasiona la automatización y el desarrollo de soluciones tecnológicas orientadas a la mejora
+            de procesos. Me identiﬁco con empresas que innovan y se proyectan hacia el futuro, donde me gustaría aportar mis
+            conocimientos y al mismo tiempo
             fortalecer mi formación profesional.</p>
 
             <p> Durante mi etapa lectiva, he desarrollado habilidades en mantenimiento
@@ -74,29 +120,54 @@
     <br>
 
 <!--Experiencia Laboral-->
-<section id="Experiencia">
+<section id="Experiencia" class="Experiencia">
     <h2 class="section1">Experiencia Laboral</h2>
         <hr>
-            <p>Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-            cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó 
-            una galería de textos y los mezcló de tal manera que logró hacer un libro de textos 
-            especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno 
-            en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado 
-            en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de 
-            Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus 
-            PageMaker, el cual incluye versiones de Lorem Ipsum.</p> 
+
+    <div class="experiencia-grid">
+            
+        <div class="item">
+        <p><strong>Mercadeo y Diseño</strong> | <strong>Servientrega</strong></p>
+        <p>2023 (Santiago de Cali) Hasta la Actualidad</p>
+        </div>
+
+        <div class="item">
+        <p><strong>Diseñador</strong> | <strong>Agencia Puro Diseño</strong></p>
+        <p>2022 (Santiago de Cali)</p>
+        </div>
+            
+        <div class="item">
+        <p><strong>Practicas Laborales</strong> | <strong>Veolia Sur Occidente</strong></p>
+        <p>2021 (Santiago de Cali)</p>
+        </div>     
+        
+        <div class="item">
+        <p><strong>Auxiliar Logistico</strong> | <strong>Calypso</strong></p>
+        <p>2019 (Santiago de Cali)</p>
+        </div> 
+
+        <div class="item">
+        <p><strong>Mensajero</strong> | <strong>Dominalco</strong></p>
+        <p>2015 (Santiago de Cali)</p>
+        </div>
+    </div>
+    
+           
+        
 </section>
     <br>
 
 <!--Estudios-->
-<section id="Formacion">
+<section id="Formacion" class="Academica">
     <h2 class="section1">Formación Academica</h2>
+
         <hr>
     
 <!--Lista No Ordenada-->
         <ul>
             <li>Tecnologo en Desarrollo de Sistemas Electronicos Industriales</li>
+            <li>Tecnologo en Diseño 3D</li>
+            <li>Tecnico Profesional en Producion Audiovisual</li>
             <li>Uso de Microsoft Excel en las Labores Operativas y Administrativas</li>
             <li>Curso de Arquitectura de Computadores</li>
             <li>Ensamble y Mantenimiento de Computadoras</li>
@@ -105,7 +176,7 @@
     <br>
 
 <!--Referencias Personales-->
-<section class="" id="Referen">
+<section id="Referen" class="Referencias">
     <h2 class="section1">Referencia Personales</h2>
         <hr>
             <br>
@@ -145,25 +216,27 @@
 
 <!--EnlacesExternos + Imagen_RedesSociales-->
     <a href="https://www.linkedin.com/in/rorotech/" target="">
-    <img src="Imagenes/linkedin.png" width="50 ">
+    <img id="blancoNegro" src="Imagenes/linkedin.png" width="50 ">
     </a>
 
     <a href="https://www.facebook.com/">
-    <img src="Imagenes/fb.png" width="50 ">
+    <img id="blancoNegro" src="Imagenes/fb.png" width="50 ">
     </a>
 
     <a href="https://www.instagram.com/dimeloerree/">
-    <img src="Imagenes/Insta.png" width="50 ">
+    <img id="blancoNegro" src="Imagenes/Insta.png" width="50 ">
     </a>
     <br>
 
-    <p>&copy; 2025 Mi primera ¨Paginal Web</p>
+    <p>&copy; 2025 Mi primera Página Web</p>
+    <a href="#inicio" class="volver-arriba">⬆ Volver al principio</a>
 
 
 </footer>
 
 </main>
+</section>
 
-</div>
+
 </body>
 </html>
