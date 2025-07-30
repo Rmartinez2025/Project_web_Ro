@@ -1,81 +1,261 @@
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #ffffff;
-text-align: justify;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: justify;
 
-max-width: 1200px;
-margin: 0 auto;
-padding: 20px;
-}
-
-header {
-background-image: url(imagenes/header_fondo.jpg);
-padding: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 nav {
-text-align: center;
-font-size: large;
-}
-
-nav ul li{
-display: inline;
-margin-right: 10px;
+  text-align: center;
+  background-color: rgb(203, 204, 204);
 
 }
-nav ul{
-List-style-type: none;
-padding: 0;
 
+nav ul { /* Botones de Navegacion */
+  
+  gap: 30px;
+  list-style: none;
+  display: inline-flex;
 }
+
+nav ul li a {
+  color: #ffffff; /* texto blanco */
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #14532d; /* verde oscuro */
+  padding: 8px 20px;
+  border-radius: 9999px; /* estilo pill/redondeado completo */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: inline-block;   
+}
+
+nav ul li a:hover { /* Animacion */
+  background-color: #166534; /* verde más claro */
+  transform: translateY(-2px); /* pequeño efecto flotante */
+}
+
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 table {
-    border: 4px solid #525252;
+  border: 4px solid #525252;
   text-align: center;
   border-collapse: collapse;
 }
 
 .filacolor2 {
-    background-color: rgb(203, 204, 204);
+  background-color: rgb(203, 204, 204);
 }
 
-
-.section1 {
-    background-color: rgb(203, 204, 204);
-    padding-left: 10%;
-}
 
 .contenedor {
   display: flex;
-  min-height: 100vh;
+  align-items: flex-start;
+  margin-top: 5px;
 }
 
-/* Sidebar gris */
-.sidebar {
-  width: 215px;
-  background-color:  rgb(203, 204, 204); /* Gris oscuro */
-  color: rgb(0, 0, 0);
-  padding: 30px;
-  text-align: left;
+
+.barraLateral { /* Barra Lateral */
+  width: 280px;
+  background-color:  rgb(203, 204, 204); /* Color Fondo */
+  color: rgb(0, 0, 0); /* Color del Texto */
+  padding: 20px;
+  text-align: center;
 }
 
-.contenido {
-  flex: 1;
-  padding: 40px;
-  background-color: white;
+fieldset {
+  border: 2px solid  rgb(21, 80, 40);
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-textarea {
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+textarea { /* Formulario */
   width: 90%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical; /* Permite redimensionar solo hacia arriba/abajo */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.contac {
+  background-color: #f9f9f9; /* Fondo claro */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
+
+.contac h1 {
+  font-size: 1.5rem;
+  color: #14532d; /* Verde oscuro */
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.contac p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.contac strong {
+  color: #14532d;
+}
+
+.contac a {
+  color: #0a66c2; /* Azul linkedin */
+  text-decoration: none;
+}
+
+.contac a:hover {
+  text-decoration: underline;
+}
+
+.contenido { /* Main Vertical */
+  flex: 1;
+  padding: 20px;
+  margin-left: 8px;
+  background-color: rgb(203, 204, 204);
+  
+}
+
+.section1 { /* H1 Sobre Mi */
+  padding-left: 10%;
+  color: #14532d;
+
+}
+
+.SobreMi { /* Informacion de Contacto */
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.Profesional { /* Perfil Profesional */
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.Experiencia { /* Experiencia Laboral */
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.experiencia-grid { /* Diseño Columnas Experiencia Laboral */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  gap: 30px; /* espacio entre columnas y filas */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.experiencia-grid .item {  /* Diseño Columnas Experiencia Laboral */
+  background-color: #dffabb;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  
+}
+
+
+
+.Academica { /* Formacion Academica */
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+ul li{ /* Margen Lista Desordenada Formacion */
+  margin: 10px;
+
+}
+
+.Referencias { /* Referencias Personales */
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.icono-contacto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+
+.icono-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+
+.icono-web {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+
+.icono-ubicacion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+
+#blancoNegro{
+  filter: grayscale(100%);
+}
+
+#fotoPerfil{
+  width: 250px; /* Tamaño de la Imagen */
+ }
+
+ .volver-arriba{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0d2214;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.volver-arriba:hover {
+  background-color: #145c35;
+ }
